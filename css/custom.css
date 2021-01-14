@@ -1,0 +1,42 @@
+#palindrome-section {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#palindrome-result {
+    min-height: 30px;
+}
+
+.result-class {
+    outline: 1px solid gray;
+    padding: 0 15px;
+    background-color: lightgray;
+}
+
+.p-3 {
+    padding: .5rem !important;
+}
+
+.mb-5, .my-5 {
+    text-align: left;
+    margin-bottom: 1rem !important;
+    width: 95%;
+}
+.palindrome-checkbox {
+    margin-right: 16px;
+}
+
+#check-hr {
+    margin-left: -15px;
+    margin-right: 15px;
+}
+
+#checkboxes {
+    margin-left: -14px;
+    margin-right: 0px;
+}
+
+body {
+    background-color: #cfd300;
+}

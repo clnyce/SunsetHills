@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+
+    <title>Sunset Hills</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Index.html">Intro</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Solve.html">Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Code.html">The Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/clnyce/" target="_blank">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://chris-nyce-portfolio.netlify.app/" target="_blank">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="mt-5">The Solution</h1>
+            </div>
+        </div>
+        <!-- ================== Palindrome ================== -->
+        <div class="jumbotron text-center">
+            <h3 class="display-4">Sunset Hills</h3>
+            <p>
+                Enter a number to represent the height of a building for each box, and then click <b>'Process'</b> to determine which ones witll be able to see the sunset.
+            </p>
+            <hr class="my-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <label for="input2"><b>Building #1 Height: </b></label>
+                        <input type="number" placeholder="Enter 1st Number" id="input1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="input2"><b>Building #2 Height: </b></label>
+                        <input type="number" placeholder="Enter 2nd Number" id="input2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="input3"><b>Building #3 Height: </b></label>
+                        <input type="number" placeholder="Enter 3rd Number" id="input3">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="input4"><b>Building #4 Height: </b></label>
+                        <input type="number" placeholder="Enter 4th Number" id="input4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="input5"><b>Building #5 Height: </b></label>
+                        <input type="number" placeholder="Enter 5th Number" id="input5">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-dark" onclick="sunsetHills()">Process</button>        
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <p id="output"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p id="numSum"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================== End Page Content ================== -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- My Custom JS -->
+    <script src="js/custom.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>

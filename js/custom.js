@@ -22,17 +22,18 @@ function sunsetHills() {
     // Open place holder to count buildings and hold first building which always sees sunset
     let count = 1;
     let currentMax = userArray[0];
-    buildArray.push(currentMax);
+    buildArray.push(`<br>Building #1 with a height of ${userArray[0]} feet<br>`);
 
         // Loop through buildings in array to see if height is taller than 1st building, and store the ones that are for output.
         for (let i = 0; i < userArray.length; i++) {
 
             if (userArray[i] > currentMax) {
                 count++;
-                buildArray.push(userArray[i]) ;
+                // buildArray.push(userArray[i]) ;
+                buildArray.push(`Building #${userArray.indexOf(userArray[i]) + 1} with a height of ${userArray[i]} feet<br>`) ;
                 currentMax = userArray[i];
             }
-            document.getElementById("output").innerHTML = `"<b>${count}</b>" buildings can see the sunset. Those are buildings with heights of "<b>${buildArray.join()}</b>"`;
+            document.getElementById("output").innerHTML = `"<b>${count}</b>" building(s) can see the sunset. Those buildings are: <br><b>${buildArray.join("")}</b>`;
             clearText();
     }
 }
